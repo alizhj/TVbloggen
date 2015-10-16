@@ -1,0 +1,2861 @@
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, ../scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, ../scss/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../scss/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, ../scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, ../scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, ../scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../scss/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, ../scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, ../scss/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, ../scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, ../scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../scss/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, ../scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../scss/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 423, ../scss/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* ------------------------------- DEBUGGING ---------------------------- */
+/* ------------------------------- COLORS ------------------------------- */
+/* ------------------------------- BORDERS --------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------- BASE ------------------------------- */
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: "tranquila_DEMO";
+  src: url("../tranquila_DEMO.otf");
+}
+
+/* line 9, ../scss/_base.scss */
+body {
+  background-color: #eeeeee;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+/* line 17, ../scss/_base.scss */
+form input[type=submit] {
+  background: #e5611d;
+  border: 1px solid #999;
+  color: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 24, ../scss/_base.scss */
+form input[type=submit]:hover {
+  background: #8a8e96;
+}
+
+/* line 29, ../scss/_base.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 34, ../scss/_base.scss */
+#wrapper {
+  font-size: 1em;
+  margin: 0 auto;
+  max-width: 80%;
+}
+/* line 40, ../scss/_base.scss */
+#wrapper h1 {
+  font-family: "tranquila_DEMO", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+/* line 46, ../scss/_base.scss */
+#wrapper h2 {
+  font-size: 1.7em;
+}
+/* line 50, ../scss/_base.scss */
+#wrapper h3 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #e5611d;
+}
+
+/* line 56, ../scss/_base.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 60, ../scss/_base.scss */
+.message {
+  color: red;
+  text-align: center;
+}
+
+/* line 65, ../scss/_base.scss */
+.success {
+  color: green;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- SLIDESHOW ----------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 71, ../scss/_base.scss */
+.blank {
+  width: 100%;
+  z-index: -100;
+}
+
+/* line 76, ../scss/_base.scss */
+#show {
+  width: 100%;
+  position: relative;
+  height: auto;
+  z-index: 90;
+}
+
+/* line 83, ../scss/_base.scss */
+#show .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* line 92, ../scss/_base.scss */
+#show img {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------ MENU -------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 100, ../scss/_base.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+/* line 108, ../scss/_base.scss */
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* line 115, ../scss/_base.scss */
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: black;
+  text-decoration: none;
+}
+
+/* line 126, ../scss/_base.scss */
+li:hover a {
+  background: #e5611d;
+}
+
+/* line 131, ../scss/_base.scss */
+li:hover ul a {
+  background: #fff;
+  color: black;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e5611d;
+}
+
+/* line 140, ../scss/_base.scss */
+li:hover ul a:hover {
+  background: #e5611d;
+  color: #eeeeee;
+}
+
+/* line 146, ../scss/_base.scss */
+li ul {
+  display: none;
+}
+
+/* line 151, ../scss/_base.scss */
+li ul li {
+  display: block;
+  float: none;
+}
+
+/* line 157, ../scss/_base.scss */
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/* line 164, ../scss/_base.scss */
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/* line 168, ../scss/_base.scss */
+.nav_admin, .nav_guest {
+  min-width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- PAGINATION ------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 176, ../scss/_base.scss */
+.pagination {
+  display: block;
+  text-align: center;
+}
+/* line 180, ../scss/_base.scss */
+.pagination a {
+  color: black;
+}
+/* line 184, ../scss/_base.scss */
+.pagination a:hover {
+  color: #e5611d;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- FOOTER  ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 192, ../scss/_base.scss */
+.footer {
+  background-color: black;
+}
+/* line 196, ../scss/_base.scss */
+.footer .copyright {
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------- INDEX ------------------------------ */
+/* -------------------------------------------------------------------------- */
+/* line 207, ../scss/_base.scss */
+.post_wall .box {
+  background-color: #fff;
+  height: 450px;
+  border: 1px solid #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+}
+/* line 215, ../scss/_base.scss */
+.post_wall .box .post {
+  max-width: 100%;
+  overflow: hidden;
+}
+/* line 224, ../scss/_base.scss */
+.post_wall .box .post_links a {
+  color: #e5611d;
+  font-style: italic;
+}
+/* line 229, ../scss/_base.scss */
+.post_wall .box .post_links a:hover {
+  color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----------------------------------SHOW_POST ----------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 243, ../scss/_base.scss */
+.show_comments {
+  border-left: 5px solid #e5611d;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  margin-left: 8%;
+  margin-right: 5%;
+  padding-left: 2%;
+}
+/* line 251, ../scss/_base.scss */
+.show_comments input[type=submit] {
+  margin-bottom: 2%;
+}
+
+/* line 256, ../scss/_base.scss */
+.form_comment {
+  border: 1px solid #999;
+  height: auto;
+  margin: 5%;
+  padding: 2%;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.33333);
+}
+/* line 265, ../scss/_base.scss */
+.form_comment textarea {
+  width: 96%;
+}
+/* line 269, ../scss/_base.scss */
+.form_comment input[type=submit] {
+  height: 30px;
+  margin-top: 5px;
+  width: 160px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------ CATEGORIES, BLOGGERS & ARCHIVE ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* line 285, ../scss/_base.scss */
+.blogcat .blogcat_post a {
+  color: #e5611d;
+  font-style: italic;
+}
+/* line 290, ../scss/_base.scss */
+.blogcat .blogcat_post a:hover {
+  color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- DASHBOARD ----------------------------- */
+/* -------------------------------------------------------------------------- */
+/* line 299, ../scss/_base.scss */
+.dashboard {
+  margin: 3%;
+}
+
+/* line 311, ../scss/_base.scss */
+.user_table table, .user_table th, .user_table td {
+  border-bottom: 1px solid #8a8e96;
+}
+
+/* line 316, ../scss/_base.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 320, ../scss/_base.scss */
+table th h4 {
+  font-size: 1.1em;
+  text-align: left;
+}
+/* line 325, ../scss/_base.scss */
+table td {
+  height: 30px;
+  padding: 1%;
+  text-align: left;
+  vertical-align: bottom;
+}
+/* line 331, ../scss/_base.scss */
+table td a:hover {
+  color: #e5611d;
+}
+
+/* line 340, ../scss/_base.scss */
+.form_new_post input[type=text] {
+  margin: 1%;
+  width: 29.32551%;
+}
+/* line 345, ../scss/_base.scss */
+.form_new_post textarea {
+  height: 500px;
+  margin: 1%;
+  width: 87.97654%;
+}
+/* line 351, ../scss/_base.scss */
+.form_new_post select {
+  margin: 2% 1% 1%;
+}
+/* line 355, ../scss/_base.scss */
+.form_new_post input[type=submit] {
+  margin: 3% 1%;
+}
+
+/* line 1, ../scss/_keyframes.scss */
+.img1 {
+  animation: img1 40s infinite;
+  -o-animation: img1 40s infinite;
+  -moz-animation: img1 40s infinite;
+  -webkit-animation: img1 40s infinite;
+}
+
+/* line 8, ../scss/_keyframes.scss */
+.img2 {
+  animation: img2 40s infinite;
+  -o-animation: img2 40s infinite;
+  -moz-animation: img2 40s infinite;
+  -webkit-animation: img2 40s infinite;
+}
+
+/* line 15, ../scss/_keyframes.scss */
+.img3 {
+  animation: img3 40s infinite;
+  -o-animation: img3 40s infinite;
+  -moz-animation: img3 40s infinite;
+  -webkit-animation: img3 40s infinite;
+}
+
+/* line 22, ../scss/_keyframes.scss */
+.img4 {
+  animation: img4 40s infinite;
+  -o-animation: img4 40s infinite;
+  -moz-animation: img4 40s infinite;
+  -webkit-animation: img4 40s infinite;
+}
+
+/* line 29, ../scss/_keyframes.scss */
+.img5 {
+  animation: img5 40s infinite;
+  -o-animation: img5 40s infinite;
+  -moz-animation: img5 40s infinite;
+  -webkit-animation: img5 40s infinite;
+}
+
+/* line 36, ../scss/_keyframes.scss */
+.img6 {
+  animation: img6 40s infinite;
+  -o-animation: img6 40s infinite;
+  -moz-animation: img6 40s infinite;
+  -webkit-animation: img6 40s infinite;
+}
+
+/* line 43, ../scss/_keyframes.scss */
+.img7 {
+  animation: img7 40s infinite;
+  -o-animation: img7 40s infinite;
+  -moz-animation: img7 40s infinite;
+  -webkit-animation: img7 40s infinite;
+}
+
+/* line 50, ../scss/_keyframes.scss */
+.img8 {
+  animation: img8 40s infinite;
+  -o-animation: img8 40s infinite;
+  -moz-animation: img8 40s infinite;
+  -webkit-animation: img8 40s infinite;
+}
+
+/* line 57, ../scss/_keyframes.scss */
+.img9 {
+  animation: img9 40s infinite;
+  -o-animation: img9 40s infinite;
+  -moz-animation: img9 40s infinite;
+  -webkit-animation: img9 40s infinite;
+}
+
+/* line 63, ../scss/_keyframes.scss */
+.img10 {
+  animation: img10 40s infinite;
+  -o-animation: img10 40s infinite;
+  -moz-animation: img10 40s infinite;
+  -webkit-animation: img10 40s infinite;
+}
+
+@-webkit-keyframes img1 {
+  /* line 73, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 74, ../scss/_keyframes.scss */
+  10% {
+    opacity: 1;
+  }
+
+  /* line 75, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 76, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 77, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 78, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 79, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 80, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 81, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 82, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 83, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img1 {
+  /* line 87, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 88, ../scss/_keyframes.scss */
+  10% {
+    opacity: 1;
+  }
+
+  /* line 89, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 90, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 91, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 92, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 93, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 94, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 95, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 96, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 97, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img1 {
+  /* line 101, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 102, ../scss/_keyframes.scss */
+  10% {
+    opacity: 1;
+  }
+
+  /* line 103, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 104, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 105, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 106, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 107, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 108, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 109, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 110, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 111, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img2 {
+  /* line 116, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 117, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 118, ../scss/_keyframes.scss */
+  20% {
+    opacity: 1;
+  }
+
+  /* line 119, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 120, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 121, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 122, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 123, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 124, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 125, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 126, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img2 {
+  /* line 130, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 131, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 132, ../scss/_keyframes.scss */
+  20% {
+    opacity: 1;
+  }
+
+  /* line 133, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 134, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 135, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 136, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 137, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 138, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 139, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 140, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img2 {
+  /* line 144, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 145, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 146, ../scss/_keyframes.scss */
+  20% {
+    opacity: 1;
+  }
+
+  /* line 147, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 148, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 149, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 150, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 151, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 152, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 153, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 154, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img3 {
+  /* line 158, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 159, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 160, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 161, ../scss/_keyframes.scss */
+  30% {
+    opacity: 1;
+  }
+
+  /* line 162, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 163, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 164, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 165, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 166, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 167, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 168, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img3 {
+  /* line 172, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 173, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 174, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 175, ../scss/_keyframes.scss */
+  30% {
+    opacity: 1;
+  }
+
+  /* line 176, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 177, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 178, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 179, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 180, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 181, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 182, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img3 {
+  /* line 186, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 187, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 188, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 189, ../scss/_keyframes.scss */
+  30% {
+    opacity: 1;
+  }
+
+  /* line 190, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 191, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 192, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 193, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 194, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 195, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 196, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img4 {
+  /* line 200, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 201, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 202, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 203, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 204, ../scss/_keyframes.scss */
+  40% {
+    opacity: 1;
+  }
+
+  /* line 205, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 206, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 207, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 208, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 209, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 210, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img4 {
+  /* line 214, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 215, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 216, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 217, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 218, ../scss/_keyframes.scss */
+  40% {
+    opacity: 1;
+  }
+
+  /* line 219, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 220, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 221, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 222, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 223, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 224, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img4 {
+  /* line 228, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 229, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 230, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 231, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 232, ../scss/_keyframes.scss */
+  40% {
+    opacity: 1;
+  }
+
+  /* line 233, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 234, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 235, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 236, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 237, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 238, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img5 {
+  /* line 243, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 244, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 245, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 246, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 247, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 248, ../scss/_keyframes.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 249, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 250, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 251, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 252, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 253, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img5 {
+  /* line 257, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 258, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 259, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 260, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 261, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 262, ../scss/_keyframes.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 263, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 264, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 265, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 266, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 267, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img5 {
+  /* line 272, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 273, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 274, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 275, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 276, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 277, ../scss/_keyframes.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 278, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 279, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 280, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 281, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 282, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img6 {
+  /* line 286, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 287, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 288, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 289, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 290, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 291, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 292, ../scss/_keyframes.scss */
+  60% {
+    opacity: 1;
+  }
+
+  /* line 293, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 294, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 295, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 296, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img6 {
+  /* line 300, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 301, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 302, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 303, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 304, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 305, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 306, ../scss/_keyframes.scss */
+  60% {
+    opacity: 1;
+  }
+
+  /* line 307, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 308, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 309, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 310, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img6 {
+  /* line 315, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 316, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 317, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 318, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 319, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 320, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 321, ../scss/_keyframes.scss */
+  60% {
+    opacity: 1;
+  }
+
+  /* line 322, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 323, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 324, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 325, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img7 {
+  /* line 329, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 330, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 331, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 332, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 333, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 334, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 335, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 336, ../scss/_keyframes.scss */
+  70% {
+    opacity: 1;
+  }
+
+  /* line 337, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 338, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 339, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img7 {
+  /* line 343, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 344, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 345, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 346, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 347, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 348, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 349, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 350, ../scss/_keyframes.scss */
+  70% {
+    opacity: 1;
+  }
+
+  /* line 351, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 352, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 353, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img7 {
+  /* line 358, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 359, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 360, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 361, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 362, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 363, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 364, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 365, ../scss/_keyframes.scss */
+  70% {
+    opacity: 1;
+  }
+
+  /* line 366, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 367, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 368, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img8 {
+  /* line 372, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 373, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 374, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 375, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 376, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 377, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 378, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 379, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 380, ../scss/_keyframes.scss */
+  80% {
+    opacity: 1;
+  }
+
+  /* line 381, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 382, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img8 {
+  /* line 386, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 387, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 388, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 389, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 390, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 391, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 392, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 393, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 394, ../scss/_keyframes.scss */
+  80% {
+    opacity: 1;
+  }
+
+  /* line 395, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 396, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img8 {
+  /* line 401, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 402, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 403, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 404, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 405, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 406, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 407, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 408, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 409, ../scss/_keyframes.scss */
+  80% {
+    opacity: 1;
+  }
+
+  /* line 410, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 411, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img9 {
+  /* line 414, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 415, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 416, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 417, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 418, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 419, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 420, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 421, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 422, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 423, ../scss/_keyframes.scss */
+  90% {
+    opacity: 1;
+  }
+
+  /* line 424, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes img9 {
+  /* line 428, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 429, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 430, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 431, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 432, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 433, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 434, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 435, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 436, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 437, ../scss/_keyframes.scss */
+  90% {
+    opacity: 1;
+  }
+
+  /* line 438, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img9 {
+  /* line 443, ../scss/_keyframes.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 444, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 445, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 446, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 447, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 448, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 449, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 450, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 451, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 452, ../scss/_keyframes.scss */
+  90% {
+    opacity: 1;
+  }
+
+  /* line 453, ../scss/_keyframes.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img10 {
+  /* line 458, ../scss/_keyframes.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 459, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 460, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 461, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 462, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 463, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 464, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 465, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 466, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 467, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 468, ../scss/_keyframes.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes img10 {
+  /* line 472, ../scss/_keyframes.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 473, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 474, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 475, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 476, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 477, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 478, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 479, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 480, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 481, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 482, ../scss/_keyframes.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes img10 {
+  /* line 487, ../scss/_keyframes.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 488, ../scss/_keyframes.scss */
+  10% {
+    opacity: 0;
+  }
+
+  /* line 489, ../scss/_keyframes.scss */
+  20% {
+    opacity: 0;
+  }
+
+  /* line 490, ../scss/_keyframes.scss */
+  30% {
+    opacity: 0;
+  }
+
+  /* line 491, ../scss/_keyframes.scss */
+  40% {
+    opacity: 0;
+  }
+
+  /* line 492, ../scss/_keyframes.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 493, ../scss/_keyframes.scss */
+  60% {
+    opacity: 0;
+  }
+
+  /* line 494, ../scss/_keyframes.scss */
+  70% {
+    opacity: 0;
+  }
+
+  /* line 495, ../scss/_keyframes.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 496, ../scss/_keyframes.scss */
+  90% {
+    opacity: 0;
+  }
+
+  /* line 497, ../scss/_keyframes.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- BASE ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 4, ../scss/_mobile.scss */
+  h1 {
+    text-align: center;
+  }
+
+  /* line 8, ../scss/_mobile.scss */
+  ul {
+    position: static;
+  }
+
+  /* line 12, ../scss/_mobile.scss */
+  li {
+    float: left;
+    margin-bottom: 1px;
+  }
+
+  /* line 17, ../scss/_mobile.scss */
+  ul li, li a {
+    width: 100%;
+  }
+
+  /* line 21, ../scss/_mobile.scss */
+  #login {
+    display: none;
+  }
+
+  /* line 25, ../scss/_mobile.scss */
+  .blank {
+    display: none;
+  }
+
+  /* line 29, ../scss/_mobile.scss */
+  #show {
+    display: none;
+  }
+
+  /* line 35, ../scss/_mobile.scss */
+  .footer p {
+    padding-left: 5%;
+  }
+  /* line 39, ../scss/_mobile.scss */
+  .footer a {
+    padding-left: 60%;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- INDEX  ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 47, ../scss/_mobile.scss */
+  #wrapper {
+    max-width: none;
+  }
+  /* line 50, ../scss/_mobile.scss */
+  #wrapper .post_wall {
+    margin: 5%;
+  }
+  /* line 53, ../scss/_mobile.scss */
+  #wrapper .post_wall .box {
+    margin-bottom: 15px;
+  }
+  /* line 58, ../scss/_mobile.scss */
+  #wrapper .post {
+    padding: 10px;
+    max-height: 270px;
+  }
+  /* line 63, ../scss/_mobile.scss */
+  #wrapper .post_links {
+    padding: 10px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* -----------------------------------SHOW_POST ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 74, ../scss/_mobile.scss */
+  #wrapper .show_post {
+    margin: 5%;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ------------------ CATEGORIES, BLOGGERS & ARCHIVE ------------------------ */
+  /* -------------------------------------------------------------------------- */
+  /* line 82, ../scss/_mobile.scss */
+  .blogcat {
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- BASE ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 4, ../scss/_tablet.scss */
+  .header {
+    max-width: 100%;
+  }
+  /* line 7, ../scss/_tablet.scss */
+  .header #logo {
+    margin-left: 0;
+  }
+  /* line 11, ../scss/_tablet.scss */
+  .header .nav_guest, .header .nav_admin {
+    background-color: black;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 20, ../scss/_tablet.scss */
+  .header .nav_guest ul#menu, .header .nav_admin ul#menu {
+    position: static;
+    margin: 0 auto;
+    width: 40em;
+  }
+  /* line 25, ../scss/_tablet.scss */
+  .header .nav_guest ul#menu li, .header .nav_admin ul#menu li {
+    width: 7.2em;
+  }
+
+  /* line 32, ../scss/_tablet.scss */
+  .footer {
+    height: 100px;
+  }
+  /* line 35, ../scss/_tablet.scss */
+  .footer p {
+    padding-left: 5%;
+  }
+  /* line 39, ../scss/_tablet.scss */
+  .footer #login {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+  /* line 43, ../scss/_tablet.scss */
+  .footer #login input[type=text], .footer #login input[type=password] {
+    width: 25%;
+    color: black;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- INDEX  ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 53, ../scss/_tablet.scss */
+  #wrapper {
+    max-width: 95%;
+  }
+  /* line 58, ../scss/_tablet.scss */
+  #wrapper .post_wall .box {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    width: 46%;
+  }
+  /* line 65, ../scss/_tablet.scss */
+  #wrapper .post_wall .box:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 70, ../scss/_tablet.scss */
+  #wrapper .post_wall .post {
+    max-height: 275px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ---------------------------------- SHOW_POST ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 81, ../scss/_tablet.scss */
+  .show_post input[type=submit] {
+    margin-bottom: 1%;
+  }
+
+  /* line 86, ../scss/_tablet.scss */
+  .show_comments {
+    margin-left: 2%;
+    margin-right: 5%;
+    padding-left: 1%;
+  }
+  /* line 91, ../scss/_tablet.scss */
+  .show_comments input[type=submit] {
+    margin-bottom: 2%;
+  }
+
+  /* line 96, ../scss/_tablet.scss */
+  .form_comment {
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- BASE ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 6, ../scss/_desktop.scss */
+  .header #logo {
+    margin-left: 0;
+    max-width: 25%;
+  }
+  /* line 11, ../scss/_desktop.scss */
+  .header .nav_admin, .header .nav_guest {
+    background-color: black;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 20, ../scss/_desktop.scss */
+  .header .nav_admin ul#menu, .header .nav_guest ul#menu {
+    position: static;
+    margin: 0 auto;
+    width: 50em;
+  }
+
+  /* line 28, ../scss/_desktop.scss */
+  .footer {
+    height: 100px;
+  }
+  /* line 31, ../scss/_desktop.scss */
+  .footer p {
+    padding-left: 5%;
+  }
+  /* line 35, ../scss/_desktop.scss */
+  .footer a {
+    padding-left: 80%;
+  }
+  /* line 39, ../scss/_desktop.scss */
+  .footer #login {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------------------- INDEX  ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 50, ../scss/_desktop.scss */
+  #wrapper .pagination {
+    padding-right: 5%;
+    text-align: right;
+  }
+  /* line 57, ../scss/_desktop.scss */
+  #wrapper .post_wall .box {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    width: 29%;
+  }
+  /* line 64, ../scss/_desktop.scss */
+  #wrapper .post_wall .box:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* line 69, ../scss/_desktop.scss */
+  #wrapper .post_wall .post {
+    max-height: 278px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* -----------------------------------SHOW_POST ----------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /* line 78, ../scss/_desktop.scss */
+  .show_comments {
+    margin-left: 2%;
+    margin-right: 5%;
+    padding-left: 1%;
+  }
+  /* line 83, ../scss/_desktop.scss */
+  .show_comments input[type=submit] {
+    margin-bottom: 2%;
+  }
+
+  /* line 88, ../scss/_desktop.scss */
+  .form_comment {
+    margin: 2%;
+    max-width: 60%;
+  }
+}

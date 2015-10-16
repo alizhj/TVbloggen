@@ -1,0 +1,358 @@
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------- BASE ------------------------------- */
+/* -------------------------------------------------------------------------- */
+@font-face {
+	font-family: "tranquila_DEMO";
+	src: url('../tranquila_DEMO.otf');
+}
+
+body {
+	background-color: $white;
+	font-family: "Merriweather Sans", sans-serif; 
+}
+
+form {
+	@include debuggingOutline;
+
+	input[type=submit] {
+		background: $orange;
+		border: 1px solid #999;
+		color: $black;
+		@include border-radius(10px);
+	}
+
+	input[type=submit]:hover {
+		background: $grey;
+	}
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+}
+
+#wrapper {
+	font-size: 1em;
+	margin: 0 auto;
+	max-width: 80%; 
+	@include debuggingOutline;
+	
+	h1 {
+		font-family: "tranquila_DEMO", sans-serif;
+		font-size: 4em;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 1.7em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+		border-bottom: 2px solid $orange;
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+.message {
+	color: red;
+	text-align: center;
+}
+
+.success {
+	color: green;
+}
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- SLIDESHOW ----------------------------- */
+/* -------------------------------------------------------------------------- */
+.blank {
+	width: 100%;
+	z-index: -100;
+}
+
+#show {
+	width: 100%;
+	position: relative;
+	height: auto;
+	z-index: 90;
+}
+
+#show .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#show img {
+	width: 100%;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------ MENU -------------------------------- */
+/* -------------------------------------------------------------------------- */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	position: absolute;
+}
+
+//Skapar horisontal lista
+li {
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+//Style för menylänkar
+li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: $black; 
+    text-decoration: none;
+}
+
+li:hover a {
+    background: $orange;
+}
+
+//Style för dropdown länkar
+li:hover ul a {
+    background: #fff;
+    color: $black; 
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid $orange;
+}
+
+//Färgar länkar vid hover
+li:hover ul a:hover {
+    background: $orange;
+    color: $white;
+}
+
+//Gömmer dropdowns tills de behövs
+li ul {
+    display: none;
+}
+
+//Gör dropdown länkar vertikala
+li ul li {
+    display: block;
+    float: none;
+}
+
+//bestämmer bredden 
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+//Visar dropdown när man hovrar
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+.nav_admin, .nav_guest {
+	min-width: 100%;
+	@include debuggingOutline;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- PAGINATION ------------------------------- */
+/* -------------------------------------------------------------------------- */
+.pagination {
+	display: block;
+	text-align: center;
+
+	a {
+		color: $black;
+	}
+
+	a:hover {
+		color: $orange;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- FOOTER  ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+.footer {
+	background-color: $black;
+	@include debuggingOutline;
+
+	.copyright {
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+/* -------------------------------------------------------------------------- */
+/* ------------------------------------- INDEX ------------------------------ */
+/* -------------------------------------------------------------------------- */
+.post_wall {
+	@include debuggingOutline;
+
+	.box {
+		background-color: #fff;
+		height: 450px;
+		border: 1px solid #999;
+		@include border-radius(10px);
+		@include box-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1/3));
+		@include debuggingOutline;
+
+		.post {
+			max-width: 100%;
+			overflow: hidden;
+			@include debuggingOutline;
+		}
+
+		.post_links {
+			@include debuggingOutline;
+
+			a {
+				color: $orange;
+				font-style: italic;
+			}
+
+			a:hover {
+				color: $black;
+			}
+		}
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----------------------------------SHOW_POST ----------------------------- */
+/* -------------------------------------------------------------------------- */
+.show_post {
+	@include debuggingOutline;
+}
+
+.show_comments {
+	border-left: 5px solid $orange;
+	@include box-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1/3));
+	margin-left: 8%;
+	margin-right: 5%;
+	padding-left: 2%;
+	@include debuggingOutline;
+
+	input[type=submit] {
+		margin-bottom: 2%;
+	}
+}
+
+.form_comment {
+	border: 1px solid #999;
+	height: auto;
+	margin: 5%;
+	padding: 2%;
+	text-decoration: none;
+	@include border-radius(10px);
+	@include box-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1/3));
+
+	textarea {
+		width: 96%;
+	}
+
+	input[type=submit] {
+		height: 30px;
+		margin-top: 5px;
+		width: 160px;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------ CATEGORIES, BLOGGERS & ARCHIVE ------------------------ */
+/* -------------------------------------------------------------------------- */
+.blogcat {
+	@include debuggingOutline;
+
+	.blogcat_post {
+		@include debuggingOutline;
+
+		a {
+			color: $orange;
+			font-style: italic;
+		}
+
+		a:hover {
+			color: $black;
+		}
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- DASHBOARD ----------------------------- */
+/* -------------------------------------------------------------------------- */
+.dashboard {
+	margin: 3%;
+	@include debuggingOutline;
+}
+
+.statistics {
+	@include debuggingOutline;
+}
+
+.user_table {
+	@include debuggingOutline;
+
+	table, th, td {
+		border-bottom: 1px solid $grey;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+
+	th h4 {
+		font-size: 1.1em;
+		text-align: left;
+	}
+
+	td {
+		height: 30px;
+		padding: 1%;
+		text-align: left;
+		vertical-align: bottom;
+
+		a:hover {
+			color: $orange;
+		}
+	}
+}
+
+.form_new_post {
+	@include debuggingOutline;
+
+	input[type=text] {
+		margin: 1%;
+		width: 300px / 1023px * 100%;
+	}
+
+	textarea {
+		height: 500px;
+		margin: 1%;
+		width: 900px / 1023px * 100%;
+	}
+
+	select {
+		margin: 2% 1% 1%;
+	}
+
+	input[type=submit] {
+		margin: 3% 1%;
+	}
+}
